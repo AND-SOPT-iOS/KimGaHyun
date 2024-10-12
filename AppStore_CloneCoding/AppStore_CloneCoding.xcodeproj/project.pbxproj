@@ -64,7 +64,7 @@
 			children = (
 				8336B5192CBA500C0034474E /* Application */,
 				8336B51A2CBA50130034474E /* Global */,
-				8336B51B2CBA501E0034474E /* Persentation */,
+				8336B51B2CBA501E0034474E /* Presentation */,
 				8336B4FD2CB1014F0034474E /* ViewController.swift */,
 				8336B5022CB101520034474E /* Assets.xcassets */,
 				8336B5072CB101520034474E /* Info.plist */,
@@ -89,12 +89,12 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-		8336B51B2CBA501E0034474E /* Persentation */ = {
+		8336B51B2CBA501E0034474E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				8336B5172CBA44A40034474E /* NicknameViewController.swift */,
 			);
-			path = Persentation;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		8336B51C2CBA50420034474E /* Extensions */ = {
