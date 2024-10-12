@@ -13,6 +13,7 @@
 		8336B5032CB101520034474E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8336B5022CB101520034474E /* Assets.xcassets */; };
 		8336B5132CBA44740034474E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8336B5122CBA44740034474E /* SnapKit */; };
 		8336B5162CBA447B0034474E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 8336B5152CBA447B0034474E /* Then */; };
+		8336B5182CBA44A40034474E /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B5172CBA44A40034474E /* NicknameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8336B4FD2CB1014F0034474E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8336B5022CB101520034474E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8336B5072CB101520034474E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8336B5172CBA44A40034474E /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				8336B4FD2CB1014F0034474E /* ViewController.swift */,
 				8336B5022CB101520034474E /* Assets.xcassets */,
 				8336B5072CB101520034474E /* Info.plist */,
+				8336B5172CBA44A40034474E /* NicknameViewController.swift */,
 			);
 			path = AppStore_CloneCoding;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8336B5182CBA44A40034474E /* NicknameViewController.swift in Sources */,
 				8336B4FE2CB1014F0034474E /* ViewController.swift in Sources */,
 				8336B4FA2CB1014F0034474E /* AppDelegate.swift in Sources */,
 				8336B4FC2CB1014F0034474E /* SceneDelegate.swift in Sources */,
