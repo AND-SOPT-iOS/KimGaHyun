@@ -14,6 +14,8 @@
 		8336B5132CBA44740034474E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8336B5122CBA44740034474E /* SnapKit */; };
 		8336B5162CBA447B0034474E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 8336B5152CBA447B0034474E /* Then */; };
 		8336B5182CBA44A40034474E /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B5172CBA44A40034474E /* NicknameViewController.swift */; };
+		8336B51E2CBA504C0034474E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B51D2CBA504C0034474E /* UIView+.swift */; };
+		8336B5202CBA50670034474E /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B51F2CBA50670034474E /* NSObject+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8336B5022CB101520034474E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8336B5072CB101520034474E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8336B5172CBA44A40034474E /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		8336B51D2CBA504C0034474E /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		8336B51F2CBA50670034474E /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +62,48 @@
 		8336B4F82CB1014F0034474E /* AppStore_CloneCoding */ = {
 			isa = PBXGroup;
 			children = (
-				8336B4F92CB1014F0034474E /* AppDelegate.swift */,
-				8336B4FB2CB1014F0034474E /* SceneDelegate.swift */,
+				8336B5192CBA500C0034474E /* Application */,
+				8336B51A2CBA50130034474E /* Global */,
+				8336B51B2CBA501E0034474E /* Persentation */,
 				8336B4FD2CB1014F0034474E /* ViewController.swift */,
 				8336B5022CB101520034474E /* Assets.xcassets */,
 				8336B5072CB101520034474E /* Info.plist */,
-				8336B5172CBA44A40034474E /* NicknameViewController.swift */,
 			);
 			path = AppStore_CloneCoding;
+			sourceTree = "<group>";
+		};
+		8336B5192CBA500C0034474E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8336B4F92CB1014F0034474E /* AppDelegate.swift */,
+				8336B4FB2CB1014F0034474E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8336B51A2CBA50130034474E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				8336B51C2CBA50420034474E /* Extensions */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		8336B51B2CBA501E0034474E /* Persentation */ = {
+			isa = PBXGroup;
+			children = (
+				8336B5172CBA44A40034474E /* NicknameViewController.swift */,
+			);
+			path = Persentation;
+			sourceTree = "<group>";
+		};
+		8336B51C2CBA50420034474E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8336B51D2CBA504C0034474E /* UIView+.swift */,
+				8336B51F2CBA50670034474E /* NSObject+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8336B5182CBA44A40034474E /* NicknameViewController.swift in Sources */,
+				8336B5202CBA50670034474E /* NSObject+.swift in Sources */,
 				8336B4FE2CB1014F0034474E /* ViewController.swift in Sources */,
 				8336B4FA2CB1014F0034474E /* AppDelegate.swift in Sources */,
 				8336B4FC2CB1014F0034474E /* SceneDelegate.swift in Sources */,
+				8336B51E2CBA504C0034474E /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
