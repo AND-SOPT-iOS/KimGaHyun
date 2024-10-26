@@ -16,6 +16,8 @@
 		8336B5182CBA44A40034474E /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B5172CBA44A40034474E /* NicknameViewController.swift */; };
 		8336B51E2CBA504C0034474E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B51D2CBA504C0034474E /* UIView+.swift */; };
 		8336B5202CBA50670034474E /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336B51F2CBA50670034474E /* NSObject+.swift */; };
+		83A2EDB72CCCB1700048C8DE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDB62CCCB1700048C8DE /* TabBarController.swift */; };
+		83A2EDB92CCCB1790048C8DE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDB82CCCB1790048C8DE /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8336B5172CBA44A40034474E /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		8336B51D2CBA504C0034474E /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8336B51F2CBA50670034474E /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		83A2EDB62CCCB1700048C8DE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		83A2EDB82CCCB1790048C8DE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		8336B51B2CBA501E0034474E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				83A2EDB52CCCB15F0048C8DE /* TabBar */,
 				8336B5172CBA44A40034474E /* NicknameViewController.swift */,
 			);
 			path = Presentation;
@@ -104,6 +109,15 @@
 				8336B51F2CBA50670034474E /* NSObject+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83A2EDB52CCCB15F0048C8DE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				83A2EDB62CCCB1700048C8DE /* TabBarController.swift */,
+				83A2EDB82CCCB1790048C8DE /* TabBarItem.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +201,9 @@
 				8336B5202CBA50670034474E /* NSObject+.swift in Sources */,
 				8336B4FE2CB1014F0034474E /* ViewController.swift in Sources */,
 				8336B4FA2CB1014F0034474E /* AppDelegate.swift in Sources */,
+				83A2EDB72CCCB1700048C8DE /* TabBarController.swift in Sources */,
 				8336B4FC2CB1014F0034474E /* SceneDelegate.swift in Sources */,
+				83A2EDB92CCCB1790048C8DE /* TabBarItem.swift in Sources */,
 				8336B51E2CBA504C0034474E /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
