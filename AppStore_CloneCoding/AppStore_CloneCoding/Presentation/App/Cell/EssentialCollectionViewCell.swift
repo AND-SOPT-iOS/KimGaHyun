@@ -107,19 +107,19 @@ private extension EssentialCollectionViewCell {
         
         if isRank {
             rankLabel.snp.remakeConstraints {
-                $0.top.equalToSuperview().inset(23)
-                $0.leading.equalTo(logoImage.snp.trailing).offset(5)
+                $0.top.equalToSuperview().inset(28)
+                $0.leading.equalTo(logoImage.snp.trailing).offset(7)
             }
             
             appTitleView.snp.remakeConstraints {
                 $0.top.equalToSuperview().inset(23)
-                $0.leading.equalTo(rankLabel.snp.trailing).offset(5)
+                $0.leading.equalTo(rankLabel.snp.trailing).offset(7)
             }
         }
         
         downloadButton.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.trailing.equalToSuperview().inset(6)
+            $0.trailing.equalToSuperview().inset(8)
             $0.width.equalTo(55)
             $0.height.equalTo(25)
         }
