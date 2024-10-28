@@ -29,6 +29,8 @@
 		83A2EDDC2CCE1DDA0048C8DE /* AdvertisementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDDB2CCE1DDA0048C8DE /* AdvertisementModel.swift */; };
 		83A2EDDE2CCE1DED0048C8DE /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDDD2CCE1DED0048C8DE /* AppListModel.swift */; };
 		83A2EDE02CCE686A0048C8DE /* CustomAppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDDF2CCE68690048C8DE /* CustomAppTitleView.swift */; };
+		83A2EDE22CCF5E7E0048C8DE /* AppListHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDE12CCF5E7D0048C8DE /* AppListHeaderReusableView.swift */; };
+		83A2EDE42CCF67560048C8DE /* AppListFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDE32CCF67560048C8DE /* AppListFooterReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		83A2EDDB2CCE1DDA0048C8DE /* AdvertisementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementModel.swift; sourceTree = "<group>"; };
 		83A2EDDD2CCE1DED0048C8DE /* AppListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModel.swift; sourceTree = "<group>"; };
 		83A2EDDF2CCE68690048C8DE /* CustomAppTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppTitleView.swift; sourceTree = "<group>"; };
+		83A2EDE12CCF5E7D0048C8DE /* AppListHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListHeaderReusableView.swift; sourceTree = "<group>"; };
+		83A2EDE32CCF67560048C8DE /* AppListFooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListFooterReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 			children = (
 				83A2EDD32CCCD0580048C8DE /* AdvertisementCollectionViewCell.swift */,
 				83A2EDD12CCCD0210048C8DE /* EssentialCollectionViewCell.swift */,
+				83A2EDE12CCF5E7D0048C8DE /* AppListHeaderReusableView.swift */,
+				83A2EDE32CCF67560048C8DE /* AppListFooterReusableView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				8336B4FE2CB1014F0034474E /* ViewController.swift in Sources */,
 				8336B4FA2CB1014F0034474E /* AppDelegate.swift in Sources */,
 				83A2EDB72CCCB1700048C8DE /* TabBarController.swift in Sources */,
+				83A2EDE22CCF5E7E0048C8DE /* AppListHeaderReusableView.swift in Sources */,
 				83A2EDC82CCCB7980048C8DE /* CustomNavigationType.swift in Sources */,
 				8336B4FC2CB1014F0034474E /* SceneDelegate.swift in Sources */,
 				83A2EDDE2CCE1DED0048C8DE /* AppListModel.swift in Sources */,
@@ -295,6 +302,7 @@
 				83A2EDB92CCCB1790048C8DE /* TabBarItem.swift in Sources */,
 				83A2EDCC2CCCBB1A0048C8DE /* CustomCompositionalLayout.swift in Sources */,
 				83A2EDCA2CCCB9680048C8DE /* UIStackView+.swift in Sources */,
+				83A2EDE42CCF67560048C8DE /* AppListFooterReusableView.swift in Sources */,
 				83A2EDC02CCCB69C0048C8DE /* AppView.swift in Sources */,
 				8336B51E2CBA504C0034474E /* UIView+.swift in Sources */,
 			);
