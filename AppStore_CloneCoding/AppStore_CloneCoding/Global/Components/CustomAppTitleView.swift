@@ -24,12 +24,12 @@ final class CustomAppTitleView: UIView {
     
     private func setupLabels() {
         mainLabel.do {
-            $0.font = .systemFont(ofSize: 14)
+            $0.font = .systemFont(ofSize: 16)
             $0.textColor = .black
         }
         
         subLabel.do {
-            $0.font = .systemFont(ofSize: 10)
+            $0.font = .systemFont(ofSize: 12)
             $0.textColor = .systemGray
         }
         

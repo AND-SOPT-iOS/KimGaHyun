@@ -36,7 +36,7 @@ enum CustomCompositionalLayout {
         
         // item
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(itemFractionalWidthFraction),
-                                              heightDimension: .absolute(250))
+                                              heightDimension: .absolute(300))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: 0,
                                                      leading: itemInset,
@@ -45,7 +45,7 @@ enum CustomCompositionalLayout {
         
         // group
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9),
-                                               heightDimension: .absolute(250))
+                                               heightDimension: .absolute(300))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                        subitems: [item])
         
@@ -56,6 +56,12 @@ enum CustomCompositionalLayout {
                                                         leading: itemInset,
                                                         bottom: itemInset,
                                                         trailing: itemInset)
+        section.boundarySupplementaryItems = [
+            NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalWidth(1),
+                                                                          heightDimension: .absolute(10)),
+                                                        elementKind: UICollectionView.elementKindSectionFooter,
+                                                        alignment: .bottom)
+        ]
         return section
     }
     
@@ -78,7 +84,7 @@ enum CustomCompositionalLayout {
                                                                 subitem: item,
                                                                 count: 3)
 
-        let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+        let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.92),
                                                             heightDimension: .estimated(300))
            let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize,
                                                                     subitems: [verticalGroup])
@@ -98,9 +104,10 @@ enum CustomCompositionalLayout {
                                                         elementKind: UICollectionView.elementKindSectionHeader,
                                                         alignment: .top),
             NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalWidth(1),
-                                                                          heightDimension: .absolute(20)),
+                                                                          heightDimension: .absolute(10)),
                                                         elementKind: UICollectionView.elementKindSectionFooter,
-                                                        alignment: .bottom)]
+                                                        alignment: .bottom)
+        ]
         return section
     }
     

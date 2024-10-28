@@ -74,14 +74,14 @@ private extension EssentialCollectionViewCell {
         
         downloadButton.do {
             $0.setTitle("받기", for: .normal)
-            $0.titleLabel?.font = .systemFont(ofSize: 12)
+            $0.titleLabel?.font = .systemFont(ofSize: 14)
             $0.backgroundColor = .systemGray6
             $0.setTitleColor(.systemBlue, for: .normal)
             $0.layer.cornerRadius = 12
         }
         
         rankLabel.do {
-            $0.font = .systemFont(ofSize: 13)
+            $0.font = .systemFont(ofSize: 15)
             $0.textColor = .black
         }
     }
@@ -119,7 +119,7 @@ private extension EssentialCollectionViewCell {
         
         downloadButton.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.trailing.equalToSuperview().inset(8)
+            $0.trailing.equalToSuperview().inset(10)
             $0.width.equalTo(55)
             $0.height.equalTo(25)
         }

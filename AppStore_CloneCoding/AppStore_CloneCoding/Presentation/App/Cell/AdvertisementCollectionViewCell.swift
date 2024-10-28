@@ -13,7 +13,7 @@ import Then
 final class AdvertisementCollectionViewCell: UICollectionViewCell {
     
     private let textColors: [UIColor] = [.systemBlue, .black, .systemGray]
-    private let fontSizes: [CGFloat] = [10, 18, 16]
+    private let fontSizes: [CGFloat] = [12, 20, 18]
     
     // MARK: - UI Components
     
