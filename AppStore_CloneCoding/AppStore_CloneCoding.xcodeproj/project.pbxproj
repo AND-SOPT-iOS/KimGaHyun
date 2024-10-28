@@ -31,6 +31,7 @@
 		83A2EDE02CCE686A0048C8DE /* CustomAppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDDF2CCE68690048C8DE /* CustomAppTitleView.swift */; };
 		83A2EDE22CCF5E7E0048C8DE /* AppListHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDE12CCF5E7D0048C8DE /* AppListHeaderReusableView.swift */; };
 		83A2EDE42CCF67560048C8DE /* AppListFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDE32CCF67560048C8DE /* AppListFooterReusableView.swift */; };
+		83A2EDE62CCFF7BA0048C8DE /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDE52CCFF7BA0048C8DE /* UICollectionView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		83A2EDDF2CCE68690048C8DE /* CustomAppTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppTitleView.swift; sourceTree = "<group>"; };
 		83A2EDE12CCF5E7D0048C8DE /* AppListHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListHeaderReusableView.swift; sourceTree = "<group>"; };
 		83A2EDE32CCF67560048C8DE /* AppListFooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListFooterReusableView.swift; sourceTree = "<group>"; };
+		83A2EDE52CCFF7BA0048C8DE /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				8336B51D2CBA504C0034474E /* UIView+.swift */,
 				8336B51F2CBA50670034474E /* NSObject+.swift */,
 				83A2EDC92CCCB9680048C8DE /* UIStackView+.swift */,
+				83A2EDE52CCFF7BA0048C8DE /* UICollectionView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				83A2EDE02CCE686A0048C8DE /* CustomAppTitleView.swift in Sources */,
 				83A2EDD42CCCD0580048C8DE /* AdvertisementCollectionViewCell.swift in Sources */,
+				83A2EDE62CCFF7BA0048C8DE /* UICollectionView+.swift in Sources */,
 				83A2EDC62CCCB78D0048C8DE /* CustomNavigationController.swift in Sources */,
 				83A2EDD22CCCD0210048C8DE /* EssentialCollectionViewCell.swift in Sources */,
 				8336B5182CBA44A40034474E /* NicknameViewController.swift in Sources */,
