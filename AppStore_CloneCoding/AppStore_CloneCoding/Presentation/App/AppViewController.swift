@@ -19,16 +19,23 @@ final class AppViewController: UIViewController {
         super.viewDidLoad()
         
         
+        setView()
+        createCollectionView()
+        setDelegate()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setNavigationBar()
+    }
+    
+    func setView() {
         setStyle()
         setHierarchy()
         setLayout()
-        
-        createCollectionView()
-        
-        setDelegate()
     }
 }
-
 
 private extension AppViewController {
     func setStyle() {
@@ -48,11 +55,13 @@ private extension AppViewController {
     func createCollectionView() {
         let mainCollectionView = rootView.collectionView
         mainCollectionView.backgroundColor = .white
-//        mainCollectionView.alwaysBounceVertical = true
         
         mainCollectionView.do {
             $0.register(AdvertisementCollectionViewCell.self, forCellWithReuseIdentifier: AdvertisementCollectionViewCell.className)
             $0.register(EssentialCollectionViewCell.self, forCellWithReuseIdentifier: EssentialCollectionViewCell.className)
+            
+            $0.register(AppListHeaderReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppListHeaderReusableView.className)
+            $0.register(AppListFooterReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AppListFooterReusableView.className)
         }
     }
     
@@ -62,30 +71,32 @@ private extension AppViewController {
     }
     
     func setNavigationBar() {
-        let type: CustomNavigationType = CustomNavigationType(hasBackButton: false,
-                                                              hasRightButton: false,
-                                                              mainTitle: StringOrImageType.string("앱"),
-                                                              rightButton: StringOrImageType.string(""),
-                                                              rightButtonAction: nil)
+        title = "금융"
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationItem.largeTitleDisplayMode = .automatic
         
-        if let navigationController = navigationController as? CustomNavigationController {
-            navigationController.setupNavigationBar(forType: type)
-        }
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        
+        // 타이틀 색상 검정으로 설정
+//        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-    
 }
 
 
 // MARK: - Essential methods
 
-extension AppViewController: UICollectionViewDelegate {
-    
-}
+extension AppViewController: UICollectionViewDelegate { }
 
 extension AppViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-            return 3
-        }
+        return 3
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -94,7 +105,6 @@ extension AppViewController: UICollectionViewDataSource {
             return essentialAppListData.count
         default:
             return freeAppListData.count
-            
         }
     }
     
@@ -115,5 +125,24 @@ extension AppViewController: UICollectionViewDataSource {
         }
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AppListHeaderReusableView.className, for: indexPath) as? AppListHeaderReusableView else { return UICollectionReusableView() }
+            switch indexPath.section {
+            case 1:
+                header.configureHeader(forTitle: "필수 금융 앱")
+            case 2:
+                header.configureHeader(forTitle: "무료 순위")
+            default: break
+            }
+            return header
+            
+        case UICollectionView.elementKindSectionFooter:
+            guard let footer = collectionView.dequeueReusableSupplementaryView( ofKind: kind, withReuseIdentifier: AppListFooterReusableView.className, for: indexPath) as? AppListFooterReusableView else { return UICollectionReusableView() }
+            return footer
+            
+        default: return UICollectionReusableView()
+        }
+    }
 }
