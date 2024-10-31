@@ -175,9 +175,9 @@
 		83A2EDC12CCCB73B0048C8DE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				83A2EDFF2CD3EA1A0048C8DE /* CustomAppTitleView */,
 				83A2EDCD2CCCBB260048C8DE /* CustomCompositionalLayout */,
 				83A2EDC42CCCB7680048C8DE /* CustomNavigationController */,
-				83A2EDDF2CCE68690048C8DE /* CustomAppTitleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -255,6 +255,14 @@
 				83A2EDCE2CCCCFE40048C8DE /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		83A2EDFF2CD3EA1A0048C8DE /* CustomAppTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				83A2EDDF2CCE68690048C8DE /* CustomAppTitleView.swift */,
+			);
+			path = CustomAppTitleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

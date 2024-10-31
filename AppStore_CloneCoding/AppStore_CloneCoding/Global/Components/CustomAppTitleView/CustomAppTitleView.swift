@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 공통적으로 사용되는 AppTitleView 컴포넌트화함
 final class CustomAppTitleView: UIView {
 
     let mainLabel = UILabel()
