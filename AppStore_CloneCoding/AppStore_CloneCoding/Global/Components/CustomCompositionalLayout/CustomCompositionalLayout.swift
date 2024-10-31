@@ -21,8 +21,8 @@ enum CustomCompositionalLayout {
                 section = createEssentialSection()
             case 2:
                 section = createEssentialSection()
-//            case 3:
-//                section = createEssentialSection()
+            case 3:
+                section = createEssentialSection()
             default:
                 section = createTodaySection()
             }
@@ -71,7 +71,7 @@ enum CustomCompositionalLayout {
         
         // item
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(itemFractionalWidthFraction),
-                                              heightDimension: .absolute(60))
+                                              heightDimension: .absolute(50))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: itemInset,
                                                      leading: itemInset,
@@ -79,13 +79,13 @@ enum CustomCompositionalLayout {
                                                      trailing: itemInset)
               
            let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                          heightDimension: .estimated(300))
+                                                          heightDimension: .estimated(270))
            let verticalGroup = NSCollectionLayoutGroup.vertical(layoutSize: verticalGroupSize,
                                                                 subitem: item,
                                                                 count: 3)
 
         let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.92),
-                                                            heightDimension: .estimated(300))
+                                                            heightDimension: .estimated(270))
            let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize,
                                                                     subitems: [verticalGroup])
         
@@ -100,11 +100,11 @@ enum CustomCompositionalLayout {
         // Header, Footer
         section.boundarySupplementaryItems = [
             NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalWidth(1),
-                                                                          heightDimension: .absolute(40)),
+                                                                          heightDimension: .absolute(30)),
                                                         elementKind: UICollectionView.elementKindSectionHeader,
                                                         alignment: .top),
             NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalWidth(1),
-                                                                          heightDimension: .absolute(10)),
+                                                                          heightDimension: .absolute(5)),
                                                         elementKind: UICollectionView.elementKindSectionFooter,
                                                         alignment: .bottom)
         ]

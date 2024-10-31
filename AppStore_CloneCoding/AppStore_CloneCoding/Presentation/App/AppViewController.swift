@@ -13,6 +13,7 @@ final class AppViewController: UIViewController {
     
     private var advertisementListData = AdvertisementList.dummy()
     private var essentialAppListData = AppList.essentialDummy()
+    private var payAppListData = AppList.payDummy()
     private var freeAppListData = AppList.freeDummy()
     
     override func viewDidLoad() {
@@ -94,7 +95,7 @@ extension AppViewController: UICollectionViewDelegate { }
 
 extension AppViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -103,6 +104,8 @@ extension AppViewController: UICollectionViewDataSource {
             return advertisementListData.count
         case 1:
             return essentialAppListData.count
+        case 2:
+            return payAppListData.count
         default:
             return freeAppListData.count
         }
@@ -117,6 +120,10 @@ extension AppViewController: UICollectionViewDataSource {
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EssentialCollectionViewCell.className, for: indexPath) as? EssentialCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(model: essentialAppListData[indexPath.item])
+            return cell
+        case 2:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EssentialCollectionViewCell.className, for: indexPath) as? EssentialCollectionViewCell else { return UICollectionViewCell() }
+            cell.dataBind(model: payAppListData[indexPath.item])
             return cell
         default:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EssentialCollectionViewCell.className, for: indexPath) as? EssentialCollectionViewCell else { return UICollectionViewCell() }
@@ -133,6 +140,8 @@ extension AppViewController: UICollectionViewDataSource {
             case 1:
                 header.configureHeader(forTitle: "필수 금융 앱")
             case 2:
+                header.configureHeader(forTitle: "유료 순위")
+            case 3:
                 header.configureHeader(forTitle: "무료 순위")
             default: break
             }
