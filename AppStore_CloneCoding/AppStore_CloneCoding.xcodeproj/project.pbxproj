@@ -166,11 +166,8 @@
 		83A2EDBA2CCCB6400048C8DE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				83A2EDFE2CD3E8BE0048C8DE /* View */,
 				83A2EDDA2CCE1DCA0048C8DE /* Model */,
-				83A2EDCE2CCCCFE40048C8DE /* Cell */,
-				83A2EDBB2CCCB6890048C8DE /* AppViewController.swift */,
-				83A2EDEE2CD378E40048C8DE /* AppDiffableDataSource.swift */,
-				83A2EDBF2CCCB69C0048C8DE /* AppView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -245,6 +242,17 @@
 			children = (
 				83A2EDFA2CD3DEA10048C8DE /* ChartView.swift */,
 				83A2EDFC2CD3DEAB0048C8DE /* ChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83A2EDFE2CD3E8BE0048C8DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83A2EDBF2CCCB69C0048C8DE /* AppView.swift */,
+				83A2EDBB2CCCB6890048C8DE /* AppViewController.swift */,
+				83A2EDEE2CD378E40048C8DE /* AppDiffableDataSource.swift */,
+				83A2EDCE2CCCCFE40048C8DE /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
