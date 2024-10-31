@@ -29,8 +29,6 @@ final class EssentialCollectionViewCell: UICollectionViewCell {
     private let downloadButton: UIButton = UIButton()
     private let rankLabel: UILabel = UILabel()
     
-
-    
     // MARK: - Life Cycle
     
     override init(frame: CGRect) {
@@ -45,8 +43,6 @@ final class EssentialCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-
 }
 
 extension EssentialCollectionViewCell {
@@ -62,7 +58,6 @@ extension EssentialCollectionViewCell {
 // MARK: - Private Extensions
 
 private extension EssentialCollectionViewCell {
-    
     func setStyle() {
         backgroundColor = .white
         self.layer.cornerRadius = 10
@@ -74,7 +69,7 @@ private extension EssentialCollectionViewCell {
         
         downloadButton.do {
             $0.setTitle("받기", for: .normal)
-            $0.titleLabel?.font = .systemFont(ofSize: 14)
+            $0.titleLabel?.font = .boldSystemFont(ofSize: 14)
             $0.backgroundColor = .systemGray6
             $0.setTitleColor(.systemBlue, for: .normal)
             $0.layer.cornerRadius = 12
@@ -100,7 +95,7 @@ private extension EssentialCollectionViewCell {
         }
         
         appTitleView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(23)
+            $0.top.equalToSuperview().inset(20)
             $0.leading.equalTo(logoImage.snp.trailing).offset(5)
         }
         
@@ -120,8 +115,8 @@ private extension EssentialCollectionViewCell {
         downloadButton.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview().inset(10)
-            $0.width.equalTo(55)
-            $0.height.equalTo(25)
+            $0.width.equalTo(62)
+            $0.height.equalTo(26)
         }
     }
 }

@@ -25,7 +25,7 @@ final class CustomAppTitleView: UIView {
     
     private func setupLabels() {
         mainLabel.do {
-            $0.font = .systemFont(ofSize: 16)
+            $0.font = .systemFont(ofSize: 15)
             $0.textColor = .black
         }
         

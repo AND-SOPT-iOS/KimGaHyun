@@ -34,6 +34,7 @@ final class AppViewController: UIViewController {
         super.viewWillAppear(animated)
         
         setNavigationBar()
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func setView() {
