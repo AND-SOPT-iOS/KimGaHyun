@@ -56,6 +56,7 @@ extension AppViewController {
                     
                 case .free:
                     header.configureHeader(forTitle: "무료 순위")
+                    header.allButton.addTarget(self, action:  #selector(self.allButtonDidTapped), for: .touchUpInside)
                     
                 default: break
                 }
@@ -85,3 +86,10 @@ extension AppViewController {
     }
 }
 
+extension AppViewController {
+    @objc
+    func allButtonDidTapped() {
+        let chartViewController = ChartViewController()
+        navigationController?.pushViewController(chartViewController, animated: true)
+    }
+}

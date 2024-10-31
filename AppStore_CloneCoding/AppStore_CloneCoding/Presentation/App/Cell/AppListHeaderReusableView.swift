@@ -13,7 +13,7 @@ import Then
 final class AppListHeaderReusableView: UICollectionReusableView {
     
     private let titleLabel: UILabel = UILabel()
-    private let allButton: UIButton = UIButton()
+    let allButton: UIButton = UIButton()
     
     // MARK: - Life Cycle
     
@@ -21,7 +21,6 @@ final class AppListHeaderReusableView: UICollectionReusableView {
         super.init(frame: frame)
         
         setView()
-        setAddTarget()
     }
     
     required init?(coder: NSCoder) {
@@ -45,6 +44,7 @@ private extension AppListHeaderReusableView {
             $0.setTitle("모두 보기", for: .normal)
             $0.setTitleColor(.systemBlue, for: .normal)
             $0.titleLabel?.font = .systemFont(ofSize: 15)
+            $0.isUserInteractionEnabled = true
         }
     }
     
@@ -62,16 +62,6 @@ private extension AppListHeaderReusableView {
             $0.top.equalToSuperview().inset(15)
             $0.trailing.equalToSuperview().inset(10)
         }
-    }
-    
-    func setAddTarget() {
-        allButton.addTarget(self, action:  #selector(allButtonDidTapped), for: .touchUpInside)
-    }
-    
-    @objc
-    func allButtonDidTapped() {
-        // AppStore 차트 이동
-        print("All Button Did Tapped")
     }
 }
 
