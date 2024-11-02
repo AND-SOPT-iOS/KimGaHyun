@@ -38,6 +38,7 @@
 		83A2EDFB2CD3DEA10048C8DE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDFA2CD3DEA10048C8DE /* ChartView.swift */; };
 		83A2EDFD2CD3DEAB0048C8DE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDFC2CD3DEAB0048C8DE /* ChartViewController.swift */; };
 		83A2EE0B2CD60A910048C8DE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83A2EE0A2CD60A910048C8DE /* Alamofire */; };
+		83A2EE0F2CD60B1B0048C8DE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EE0E2CD60B1B0048C8DE /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		83A2EDF62CD3DE8F0048C8DE /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		83A2EDFA2CD3DEA10048C8DE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		83A2EDFC2CD3DEAB0048C8DE /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		83A2EE0E2CD60B1B0048C8DE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		8336B4F82CB1014F0034474E /* AppStore_CloneCoding */ = {
 			isa = PBXGroup;
 			children = (
+				83A2EE0D2CD60B110048C8DE /* Network */,
 				8336B5192CBA500C0034474E /* Application */,
 				8336B51A2CBA50130034474E /* Global */,
 				8336B51B2CBA501E0034474E /* Presentation */,
@@ -267,6 +270,14 @@
 			path = CustomAppTitleView;
 			sourceTree = "<group>";
 		};
+		83A2EE0D2CD60B110048C8DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				83A2EE0E2CD60B1B0048C8DE /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A2EDE02CCE686A0048C8DE /* CustomAppTitleView.swift in Sources */,
+				83A2EE0F2CD60B1B0048C8DE /* NetworkError.swift in Sources */,
 				83A2EDFD2CD3DEAB0048C8DE /* ChartViewController.swift in Sources */,
 				83A2EDD42CCCD0580048C8DE /* AdvertisementCollectionViewCell.swift in Sources */,
 				83A2EDE62CCFF7BA0048C8DE /* UICollectionView+.swift in Sources */,
