@@ -37,6 +37,7 @@
 		83A2EDF72CD3DE8F0048C8DE /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDF62CD3DE8F0048C8DE /* ChartModel.swift */; };
 		83A2EDFB2CD3DEA10048C8DE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDFA2CD3DEA10048C8DE /* ChartView.swift */; };
 		83A2EDFD2CD3DEAB0048C8DE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2EDFC2CD3DEAB0048C8DE /* ChartViewController.swift */; };
+		83A2EE0B2CD60A910048C8DE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83A2EE0A2CD60A910048C8DE /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A2EE0B2CD60A910048C8DE /* Alamofire in Frameworks */,
 				8336B5132CBA44740034474E /* SnapKit in Frameworks */,
 				8336B5162CBA447B0034474E /* Then in Frameworks */,
 			);
@@ -284,6 +286,7 @@
 			packageProductDependencies = (
 				8336B5122CBA44740034474E /* SnapKit */,
 				8336B5152CBA447B0034474E /* Then */,
+				83A2EE0A2CD60A910048C8DE /* Alamofire */,
 			);
 			productName = AppStore_CloneCoding;
 			productReference = 8336B4F62CB1014F0034474E /* AppStore_CloneCoding.app */;
@@ -316,6 +319,7 @@
 			packageReferences = (
 				8336B5112CBA44740034474E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8336B5142CBA447B0034474E /* XCRemoteSwiftPackageReference "Then" */,
+				83A2EE092CD60A910048C8DE /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 8336B4F72CB1014F0034474E /* Products */;
 			projectDirPath = "";
@@ -588,6 +592,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		83A2EE092CD60A910048C8DE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -600,6 +612,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8336B5142CBA447B0034474E /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		83A2EE0A2CD60A910048C8DE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83A2EE092CD60A910048C8DE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
