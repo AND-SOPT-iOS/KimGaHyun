@@ -19,15 +19,15 @@ struct FinanceGradeCell: View {
             downloadButton
             
         }
-        .padding()
+        .padding(8)
     }
     
     var thumbnailImage: some View {
         grade.iconImage
             .resizable()
-            .frame(width: 90, height: 90)
+            .frame(width: 50, height: 50)
             .scaledToFill()
-            .cornerRadius(15)
+            .cornerRadius(10)
     }
     
     
@@ -36,7 +36,7 @@ struct FinanceGradeCell: View {
             Text(String(grade.rank))
                 .font(.body)
                 .foregroundColor(.black)
-            VStack {
+            VStack(alignment: .leading) {
                 Text(grade.mainTitle)
                     .font(.caption)
                     .foregroundColor(.black)
@@ -52,10 +52,12 @@ struct FinanceGradeCell: View {
         Button {
         } label: {
             Text(grade.downloadState)
-                .font(.headline)
+                .font(.caption)
                 .foregroundColor(.blue)
-                .background(Color.gray)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .background(Color.gray).opacity(0.8)
+        .frame(width: 50, height: 20)
         .cornerRadius(20)
     }
 }
@@ -78,24 +80,6 @@ struct FinanceGradeView: View {
             .padding(.horizontal)
         }
     }
-//    var body: some View {
-//        ScrollView(.horizontal, showsIndicators: false) {
-//            LazyHStack(spacing: 16) {
-//                ForEach(0..<grade.count / 3, id: \.self) { index in
-//                    VStack {
-//                        ForEach(0..<3) { num in
-//                            if let grade = grade[safe: index * 3 + num] {
-//                                FinanceGradeCell(grade: grade)
-//                            }
-//                            
-//                        }
-//                    }
-//                    
-//                }
-//            }
-//            .padding(.horizontal)
-//        }
-//    }
 }
 
 #Preview {
