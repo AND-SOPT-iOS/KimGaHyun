@@ -81,7 +81,3 @@ struct FinanceGradeView: View {
         }
     }
 }
-
-#Preview {
-    FinanceGradeView(grade: FinanceGradeModel.dummy())
-}

@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        FinanceGradeView(grade: FinanceGradeModel.dummy())
+        FinanceView(
+            advertisement: FinanceAdvertisementModel.dummy(),
+            grades: FinanceGradeModel.essentialDummy() 
+        )
     }
 }
 
